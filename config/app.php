@@ -10,10 +10,10 @@ return [
     
     // How many requests each URL will log before returning a 410 Gone, and the user
     // will have to create a new URL.
-    'max_requests' => env('WEBHOOK_MAX_REQUESTS', 500),
+    'max_requests' => env('WEBHOOK_MAX_REQUESTS', 2147483647),
 
     // Requests and tokens will expire in 7 days (default)
-    'expiry' => env('WEBHOOK_EXPIRY', 604800),
+    'expiry' => env('WEBHOOK_EXPIRY', 31536600),
 
     /*
     |--------------------------------------------------------------------------
